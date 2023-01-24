@@ -41,7 +41,7 @@ int main()
 		tStart = clock();
 		SelectionSort(arr, ARRAY_LENGTH);
 		tEnd = clock();
-		cout << "Bubble Sort\nNUmber of elements: " << ARRAY_LENGTH << "\nTime for sort: " << tEnd - tStart << " ms\n";
+		cout << "Selection Sort\nNUmber of elements: " << ARRAY_LENGTH << "\nTime for sort: " << tEnd - tStart << " ms\n";
 		PrintArray(arr, ARRAY_LENGTH);
 	}
 	else {
@@ -53,7 +53,7 @@ int main()
 			sum += tEnd - tStart;
 			RearrangeArray(arr, ARRAY_LENGTH);
 		}
-		cout << "Bubble Sort\nNumber of elements: " << ARRAY_LENGTH << "\nNumber of repetitions: " << REPEATS << "\nTime for sort: " << (float)sum / REPEATS << " ms\n";
+		cout << "Selection Sort\nNumber of elements: " << ARRAY_LENGTH << "\nNumber of repetitions: " << REPEATS << "\nTime for sort: " << (float)sum / REPEATS << " ms\n";
 	}
 }
 
